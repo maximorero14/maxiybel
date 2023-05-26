@@ -13154,7 +13154,7 @@
 
                                                                                                 </br></br></br>
                                                                                                     <button class="play-button" onclick="playMusic()">
-                                                                                                        <img src="img/icons8-play-50.png" alt="Botón de reproducción">
+                                                                                                        <img id="audio_icon" src="img/icons8-play-50.png" alt="Botón de reproducción">
                                                                                                     </button>
 
                                                                                                     
@@ -13165,13 +13165,18 @@
 
                                                                                                         <script>
                                                                                                             function playMusic() {
-                                                                                                            var audio = document.getElementById("music");
-                                                                                                            if (audio.paused) {
-                                                                                                                audio.play();
-                                                                                                            } else {
-                                                                                                                audio.pause();
-                                                                                                            }
-                                                                                                            }
+                                                                                                                    var audio = document.getElementById("music");
+                                                                                                                    var playIcon = document.getElementById("audio_icon");
+
+                                                                                                                    if (audio.paused) {
+                                                                                                                        audio.play();
+                                                                                                                        playIcon.src = "img/icons8-pause-button-50.png"; // Cambia la imagen a pausa
+                                                                                                                    } else {
+                                                                                                                        audio.pause();
+                                                                                                                        playIcon.src = "img/icons8-play-50.png"; // Cambia la imagen a reproducción
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            
                                                                                                         </script>
                                                                                                     </span></span></span></span></span></span></span></span></span></span></span>
                                                     </h1>
@@ -13184,7 +13189,7 @@
                                                                 id="img_comp-lacvxl2o" class="HlRz5e BI8PVQ"
                                                                 data-image-info="{&quot;containerId&quot;:&quot;comp-lacvxl2o&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:259,&quot;targetHeight&quot;:323,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:1080,&quot;height&quot;:1350,&quot;uri&quot;:&quot;eba6cb_783d7230441c447c92446bc58577da0f~mv2.png&quot;,&quot;name&quot;:&quot;2.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;crop&quot;:{&quot;x&quot;:0,&quot;y&quot;:138,&quot;width&quot;:1080,&quot;height&quot;:1212,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;,&quot;flip&quot;:&quot;none&quot;}}}"
                                                                 data-bg-effect-name="" data-has-ssr-src=""
-                                                                data-src="https://static.wixstatic.com/media/eba6cb_783d7230441c447c92446bc58577da0f~mv2.png/v1/crop/x_0,y_138,w_1080,h_1212/fill/w_518,h_646,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2.png"><img
+                                                                ><img
                                                                     src="https://static.wixstatic.com/media/eba6cb_783d7230441c447c92446bc58577da0f~mv2.png/v1/crop/x_0,y_138,w_1080,h_1212/fill/w_518,h_646,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2.png"
                                                                     alt="2.png"
                                                                     style="width:259px;height:0px;object-fit:cover"
@@ -13479,7 +13484,7 @@
                                                                                                         class="wixui-rich-text__text">
                                                                                                     <br
                                                                                                         class="wixui-rich-text__text">
-                                                                                                    19:00 HRS</span></span></span></span></span></span></span></span>
+                                                                                                    Horario a confirmar</span></span></span></span></span></span></span></span>
                                                                 </h2>
                                                             </div>
                                                             <div class="comp-lablxkmh R6ex7N" id="comp-lablxkmh"
@@ -13570,8 +13575,10 @@
                                                                                                         class="wixui-rich-text__text">
                                                                                                     <br
                                                                                                         class="wixui-rich-text__text">
-                                                                                                    donde<br
+                                                                                                        Porteña, Córdoba, Argentina<br
                                                                                                         class="wixui-rich-text__text">
+                                                                                                        </br>
+                                                                                                        Horario a confirmar
                                                                                                     <br
                                                                                                         class="wixui-rich-text__text"></span></span></span></span></span></span></span></span>
                                                                 </h2>
@@ -13581,7 +13588,7 @@
                                                                 data-angle-style-location="style"
                                                                 data-screen-in-hide="done" style="visibility: inherit;">
                                                                 <a data-testid="linkElement"
-                                                                    href="https://goo.gl/maps/4dKiUAjsW2X3j4US8"
+                                                                    href="https://goo.gl/maps/SvD3ki18i5iTPg4V7?coh=178573&entry=tt"
                                                                     target="_blank" rel="noreferrer noopener"
                                                                     class="kuTaGy wixui-button zKbzSQ"
                                                                     aria-disabled="false"><span
